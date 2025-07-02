@@ -1,0 +1,672 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      button{
+        border: none;
+
+      }
+      .row-home{
+        height: 50px;
+        display: flex;
+        gap: 500px;
+        align-items: center;
+       
+      }
+     
+      .nev img{
+        width: 30px;
+        height: 30px;
+        
+      }
+      .nev{
+        display: flex;
+        gap: 5px;
+      }
+      .nev ul{
+        display: flex;
+        gap: 20px;
+       text-decoration: none;
+        list-style: none;
+        align-items: center;
+       
+        
+      }
+      
+      .nev ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        
+      }
+   
+      .label{
+        height: 50px;
+        width: 50px; 
+      }
+      select{
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+      }
+      .loc{
+      display: flex;
+      justify-content: center;
+      }
+      .lo{
+        font-size: 25px;
+        margin-top: 40px;
+      }
+       input{
+        width: 300px;
+      
+       }
+      .c{
+        
+        background-color: rgb(224, 135, 165);
+        border-radius: 5px;
+        
+      }
+      .head{
+        height: 40px;
+        background-color: rgb(42, 138, 171);
+        
+        
+      }
+      .head ul{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+       
+        text-decoration: none;
+        list-style: none;
+        font-size: 20px;
+      
+      
+      }
+      .head ul li{
+        align-items: center;
+      }
+     .head ul li a{
+           color:white;
+           text-decoration: none;
+          /* padding-top: 20px; */
+          display: inline-block;
+          margin-top: 10px;
+        
+     }
+     
+     .main-box{
+        width: 100%;
+        padding: 50px;
+        background-color: rgb(245, 237, 239);
+        text-align: center;
+        align-items: center;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+     }
+      .shop{
+        padding: 5px;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(40, 167, 161);
+        border-radius: 2px;
+      }
+
+      h1{
+        margin-bottom: 20px
+      }
+      .services{
+        display: flex;
+        gap: 30px;
+        width: 1000px;
+        margin: 0 auto;
+      }
+
+      .service{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+      }
+
+      .service img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid #c69d9d;
+      }
+
+      .service p{
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 15px;
+        color: rgb(58, 53, 53)
+      }
+      .off img{
+      height: 200px;
+      width: auto;
+      position: relative;
+   
+      }
+      .card-container{
+        display: flex;
+        gap: 20px;
+        padding: 0 80px;
+      }
+       .card{
+           position: relative;
+       }
+      .badge{
+        padding: 10px;
+        background-color: #d99393;
+        font-size: 15px;
+        position: absolute;
+        top: -10px;
+        color:white;
+        z-index: 2;
+      }
+      
+      .off h2{
+           font-size: 30px;
+           gap: 20px;
+      }
+      .off p{
+        font-size: 20px;
+        position: relative;
+      }
+      .s-img{
+        height: 50px;
+        width: 50px;
+        border: none;
+        background-color: white;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 130px;
+        left: 220px;
+      
+      }
+      .s-img img{
+        width: 20px;
+        height: 20px;  
+      }
+      .p{
+        margin-bottom: 30px;
+      }
+      .sidhirite{
+        position: relative;
+      }
+      .loc{
+        position: absolute;
+        bottom: 50px;
+        left: 40%;
+      }
+      .bhuri img{
+        width: 300px;
+      }
+      .bhuri1{
+        background: url('https://www.homesalon.in/assets/images/jap_back.png');
+      }
+      .bhuri2{
+        padding: 50px;
+        display: flex;
+        gap: 20px;justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      /* .safed{
+        background-color: white;
+      } */
+       .bhuri{
+        background-color: white;
+        width: 300px;
+       }
+       .kali{
+        margin: 40px;
+        margin-top: 40px;
+        display: flex;
+        gap: 40px;
+       }
+       .kali img{
+        height: 100px;
+        margin-top: 50px;
+       }
+       .h3{
+        margin-top: 70px;
+        font-size: 40px;
+        font-weight: 800;
+        color: white;
+       }
+      .A{
+        text-decoration: none;
+        color: black;
+      }
+       .D{
+        color: white;
+        flex-direction: column;
+        font-size: 30px;
+       }
+       .containerRica{
+        background-color: #4b2179;
+        color: white;
+       padding: 0;
+      
+       }
+       .title{
+        text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        font-size: 20px;
+        background-color: #4b2179;
+        color: white;
+       }
+       .content-ad{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;  
+       }
+       .images-sec img{
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+       }
+       .text-sec{
+        flex: 1;
+        padding: 20px;
+        background-color: #4b2179;
+        color: white;
+       
+       }
+       .text-sec h2{
+        color: #ffffff;
+        font-size: 30px;
+        margin-bottom: 10px;
+       }
+       .text-sec p{
+        font-size: 20px;
+        margin-bottom: 20px;
+       }
+       .book-btn{
+        display: inline-block;
+        background-color: white;
+        color: #4b2179;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+       }
+       .containervid{
+        display: flex;
+        justify-content: space-between;
+        
+        padding: 40px;
+        gap: 20px;
+       }
+        .title-ad{
+          padding-left: 50px;
+          padding-top: 50px;
+        }
+       
+       .title-ad h2{
+        font-size: 50px;
+        margin-bottom: 10px;
+        
+       }
+
+       .title-ad p{
+        font-size: 3x0px;
+        width: 300px;
+       }
+        
+       .row-video{
+        /* position: relative; */
+        /* width: 300px; */
+       }
+        
+       .iframe-container{
+         position: relative; 
+        height: 500px;
+        width: 100%;
+       
+       
+       
+        /* display: flex; */
+       }
+      
+       .iframe-container embed{
+       position: absolute;
+       width: 290px;
+       height: 500px;
+       left: 1000px;
+       }
+
+       .discount{
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        background-color: #f88b96;
+        color: white;
+        padding: 5px 10px;
+        font-size: 10px;
+        font-weight: bold;
+        /* border-radius: 3px; */
+
+       }
+       .pre{
+        top: 50px;
+        text-align: justify;
+        padding: 30px;
+        
+       }
+       .pre h3{
+               font-size: 40px;
+       }
+      .pre p{
+        font-size: 20px;
+      }
+      .content-ad1{
+    
+        display: flex;
+      
+        /* justify-content: space-between; */
+        flex-wrap: wrap;  
+       }
+      .title1{
+         text-align: center;
+        font-weight: bold;
+        padding: 10px 0;
+        font-size: 20px;
+        background-color: #b49acf;
+        color: white;
+      }
+      
+
+      .images-sec1 img{
+        height: 300px;
+        width: auto;
+        object-fit: cover;
+      }
+
+       .text-sec1{
+      
+        padding: 20px;
+        background-color: #b49acf;
+        color: white;
+       
+       }
+
+       .text-sec1 p{
+        font-size: 20px;
+        margin-bottom: 20px;
+       }
+       .book-btn1{
+        display: inline-block;
+        /* background-color: white; */
+        color: white;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <marquee direction=""  bgcolor ="pink" style="color: rgb(255, 255, 255); font-size: 30px;">
+            Super Salon Deals Book Now! 
+          </marquee>
+    
+    <div class="row-home">
+        <button><img src="https://www.homesalon.in/assets/images/logo6.png" alt="" width="200px" ></button>
+        <div class="nev">
+          <ul>
+            <li><a href="">Packages</a>
+            </li>
+            <li><a href="">Appoinment</a>
+            </li>
+            <li><a href="">Blogs</a>
+            </li>
+            <li><a href="">contact Us</a>
+            </li>
+            <li><a href="" class="c">Career</a>
+            </li>
+          </ul>
+         <img src="flag.png">
+         <img src="pocket_icon.png">
+          <img src="login_icon.png"> 
+        </div>
+    </div>
+
+
+
+    <div class="head">
+        <ul>
+          <li><a href="" style="border-right: 3px solid white; padding-right: 30px;">Home</a>
+          </li>
+          <li><a href="">Packages Deals</a>
+          </li>
+          <li><a href="">Facial</a>
+          </li>
+          <li><a href="">Mani $ padi</a>
+          </li>
+          <li><a href="">Hair Care </a>
+          </li>
+          <li><a href="">Make UP </a>
+          </li>
+          <li><a href="">Nail art</a> </a>
+          </li>
+        </ul>
+        </div>
+    
+   
+   <div class="sidhirite">
+    <div class="img1">
+      <img src="https://www.homesalon.in/banner/1724433168VLCCFacial(5).png" alt=""  width="100%" >
+      </div>
+      <div class="loc">   
+        <!-- <label for="lo" class="lo">choose loction</label> -->
+        <select name="subject" id="subject" >
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="delhi">delhi</option>
+          <option value="panjab">panjab</option>
+        </select> 
+        <input type="text" placeholder="Search for anything">
+    </div>
+   </div>
+
+  <div class="main-box">
+    <h2>Beauty Salon at Home in Ahmedabad</h2>
+    <p>Brihten your glow with Home Salon's best and exclusive Deals. We gotchu </p>
+    <a href="" class="shop">SHOP ALL DEALS</a>
+  </div>
+
+
+
+  <h1>What are you looking for, Bestie?</h1>
+  <div class="services">
+
+    <div class="service">
+      <img src="https://www.homesalon.in/category/1724051399facial.png" alt="">
+      <p>Facial</p>
+    </div>
+ 
+    <div class="service">
+      <img src="https://www.homesalon.in/subcategory/1724433271cleanup.png" alt="Clean up">
+      <p>Clean up</p>
+    </div>
+
+    <div class="service">
+      <img src="https://www.homesalon.in/category/17037519711653424227.jpg" alt="Mani & Pedi">
+      <p>Mani & Pedi</p>
+    </div>
+
+    <div class="service">
+      <img src="https://www.homesalon.in/category/17037758041653425813.jpg" alt="Hair Care">
+      <p>Hair Care</p>
+    </div>
+
+    <div class="service">
+      <img src="https://www.homesalon.in/category/1724050826Untitleddesign(11).png" alt="Make UP">
+      <p>Make UP</p>
+    </div>
+
+
+    <div class="service">
+      <img src="https://www.homesalon.in/category/1724050473Untitleddesign(9).png" alt="Nail Art">
+      <p>Nail Art</p>
+    </div>
+    </div>
+
+       
+   <div class="off ">
+    <h2>Dream come true..</h2>
+    <p class="p">This is your sign to try these deals </p>
+    <div class="card-container">
+      <div class="card">
+        <span class="badge">52% OFF</span>
+        <img src="https://www.homesalon.in/product/1724608441long-length_3700.jpg" alt="">
+
+        <div class="s-img">
+          <img src="https://im.idiva.com/content/2019/Jun/THUMBNAIL-6_5d0a21f9a1888.png?w=450&h=338&cc=1">
+        </div>
+        <h3>Keratin treatment - Large Hair Length</h3>
+        <p class="price"><strong>₹3499</strong> <del>₹7299</del></p>
+      </div>
+         
+      <div class="card">
+        <span class="badge">52% OFF</span>
+        <img src="https://www.homesalon.in/product/1724608390medium-length_2800.jpg" alt="">
+
+        <div class="s-img">
+          <img src="https://im.idiva.com/content/2019/Jun/THUMBNAIL-6_5d0a21f9a1888.png?w=450&h=338&cc=1">
+        </div>
+        <h3>Keratin treatment - Medium  Hair Length</h3>
+        <p class="price"><strong>₹2999</strong> <del>₹6299</del></p>
+      </div>
+
+      <div class="card">
+        <span class="badge">52% OFF</span>
+        <img src="https://www.homesalon.in/product/1724608332short-length_1900.jpg" alt="">
+
+        <div class="s-img">
+          <img src="https://im.idiva.com/content/2019/Jun/THUMBNAIL-6_5d0a21f9a1888.png?w=450&h=338&cc=1">
+        </div>
+        <h3>Keratin treatment - Small Hair Length</h3>
+        <p class="price"><strong>₹2499</strong> <del>₹5299</del></p>
+      </div>
+    
+      <div class="card">
+        <span class="badge">22% OFF</span>
+        <img src="https://www.homesalon.in/product/1724608140medium-length_2999.jpg" alt="">
+
+        <div class="s-img">
+          <img src="https://im.idiva.com/content/2019/Jun/THUMBNAIL-6_5d0a21f9a1888.png?w=450&h=338&cc=1">
+        </div>
+        <h3>Smoothings treatment - Small Hair Length</h3>
+        <p class="price"><strong>₹3599</strong> <del>₹4299</del></p>
+      </div>
+    
+
+   </div>
+  </div>
+<div class="container bhuri1">
+  <div class="kali">
+    <img src="https://www.homesalon.in/assets/images/red-hair.png" alt="">
+    <div>
+    <h3 class="h3">Experience Luxury Salon at Home Services <a href="#" class="A"> > </a> </h3><br>
+    <p class="D"> This is your This is your sign to try these Dream deals 
+       </p>
+       </div>
+  </div>
+  <div class="row bhuri2">
+    
+    <div class="col bhuri">
+      <img src="https://www.homesalon.in/product/1703841641bob-cut-_short-cuts__outter.jpg" alt="">
+        <h3>Bob Cut (Short Cuts) </h3>
+        <p class="price"><strong>₹559</strong> <del>₹899</del></p>
+    </div>
+
+    <div class="col bhuri">
+      <img src="https://www.homesalon.in/product/1703841752cara-bob-cut-_short-cuts__outter.jpg" alt="">
+      <h3>Cara Bob Cut(Short Cuts) </h3><p class="price"><strong>₹559</strong> <del>₹899</del></p>
+        
+    </div>
+    <div class="col bhuri">
+      <img src="https://www.homesalon.in/product/170385812820231229_192211_0000.png" alt="">
+        <h3>Loreal Hair Spa </h3>
+        <p class="price"><strong>₹649</strong>
+          <del>1398</del> 
+    </div>
+    <div class="col bhuri">
+      <img src="https://www.homesalon.in/product/170386020420231229_195901_0000.png" alt="">
+        <h3>Loreal INOA Root Touch up</h3><p class="price"><strong>₹850</strong>
+          <del>1700</del>
+    </div>
+  </div>
+</div>
+
+<div class="container Rica">
+  <div class="title">
+    <p>Brazilian Waxing (Strawberry Wax 🍓) by Rica
+    </p>
+  </div>
+<div class="content-ad">
+  <div class="images-sec">
+<img src="https://www.homesalon.in/assets/images/bra.png">
+  </div>
+<div class="text-sec">
+  <h2>Enjoy 40% Off! Rica's Brazillian Wax is specially made for sensitive skin.</h2>
+  <p>Produced for #ricaindia and made with Chamomile and Aloe Vera to soothe.</p>
+  <a href="#" class="book-btn">BOOK NOW ➜</a>
+</div>
+ </div>
+</div>
+   
+<div class="container vid">
+  <div class="title-ad">
+    <h2>Bestie Picks!</h2>
+    <p>Experience these beautiful deals now.</p>
+  </div>
+  <div class="row-video">
+    <span class="discount">50%</span>
+   <div class="iframe-container">
+    <embed src="https://www.homesalon.in/video_home/1720462251XE2ACZNd9q2OhavEzhJQNNIsJbjxQTUYG6hzQ897.mp4"  >
+    </embed>
+   </div>
+  </div>
+</div>
+
+<div class="pre">
+  <h3>Beauty Parlour Services in Ahmedabad <a href="#" class="A"> > </a></h3>
+  <p>Choose Your Favorite Parlour Service At Home in Ahmedabad  In today’s busy world, convenience is everything. We all have packed schedules, and sometimes fitting in a trip to the salon can feel like a chore. That’s why at-home salon and parlour services in Ahmedabad are becoming so popular. Brands like HOME SALON are leading the way, bringing professional beauty care, including home salon services and on-demand beauty treatments, right to your doorstep. Imagine getting pampered by a skilled expert in your own home—no traffic, no waiting rooms, just pure relaxation</p>
+</div>
+
+   <div class="container on">
+  <div class="title1">
+    <p>WHAT'S GLOW-ING ON? ✨
+    </p>
+  </div>
+<div class="content-ad1">
+  <div class="images-sec1">
+<img src="https://www.homesalon.in/assets/images/ogg.png">
+  </div>
+<div class="text-sec1">
+  <h2>Besties, this Premier Lifestyle Membership Card is Your Newest Shopping Must-Have</p>
+  <a href="#" class="book-btn1">DISCOVER WHAT'S UP AND WHAT'S NEW ➜</a>
+</div>
+ </div>
+</div>
+
+
+</html>
