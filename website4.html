@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .row-header{
+            background-color: black;
+            padding: 20px;
+
+        }
+        .col-header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .col-header img{
+            width: 180px;
+            
+        }
+        .row-header .btn{
+            background-color: rgb(149, 213, 52);
+            padding: 10px;
+            color: white;
+            font-size: 15px;
+            border-radius: 8px;
+        }
+
+       
+
+        .col-nevbar{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+
+        .col-nevbar img{
+            width: 180px;
+        }
+
+        .col-nevbar1 i{
+            color: cornflowerblue;
+            font-size: 25px;
+        }
+
+        .location{
+            font-size: 15px;
+           
+        }
+
+        .phone{
+            font-size: 15px;
+            gap: 10px;
+        }
+
+        .phone1{
+            font-weight: bold;
+        }
+
+        .phone i{
+              color: cornflowerblue;
+               font-size: 25px;
+               
+        }
+
+        .btn1 {
+            background-color: rgb(140, 81, 208);
+            color: white;
+            font-size: 20px;
+            border: none;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+
+        .col-menubar{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 100px;
+            background-color: #1E306E;
+            padding: 25px;
+            margin-top: 20px;
+            color: white;
+            font-size: 25px;
+          
+        }
+        .col-menubar .menu {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: center;
+            gap: 35px;
+            list-style: none;
+        }
+        
+        .col-offer{
+           text-align: center;
+           margin-top: 25px;
+           font-size: 20px;
+        }
+        
+        .col-offer span{
+            color: #298CD3;
+            font-weight: bold;
+        }
+
+
+        .col-picture{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(190, 216, 232);
+            
+        }
+       
+        .col-picture img{
+            width: 50vw;
+        }
+
+        .col-picture .heading{
+            font-size: 60px;
+            margin-top: 30px;
+            color: #1E306E;
+            font-family: sans-serif;
+        }
+
+        .col-picture .head{
+            color: #1E306E;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        .col-picture .btn2{
+            background-color: #1E306E;
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 10px;
+            border: none;   
+        }
+
+        .col-advantanges .advan{
+            font-size: 20px;
+            color: #6e83cd;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .col-advantanges .year{
+            font-size: 40px;
+            color: #1E306E;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .col-advantanges .exeprince{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .exeprince i{
+            color: #1E306E;
+            font-size: 30px;
+
+        }
+
+        .exeprince {
+            font-size: 40px;
+            
+        }
+        .right, .right1, .right2{
+            display: flex;
+        }
+
+       
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container-header">
+        <div class="row-header">
+            <div class="col-header">
+                <img src="https://assets.market-storefront.envato-static.com/storefront/assets/logos/envato-market-0c6ef0bdbf918a098bf915273cd4ca39cb1afd7992deef185dafe33b2c623b2f.svg" alt="">
+                <a href=""><button class="btn">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-nevbar">
+        <div class="row-nevbar">
+            <div class="col-nevbar">
+                <img src="https://ld-wt73.template-help.com/tf/oftalmologist_v3/images/logo-default-256x112.png" alt="">
+
+
+                
+                <div class="col-nevbar1"> 
+                    <p class="location"><i class="fa-solid fa-location-dot"></i>670 Lafayette Ave, Brooklyn, NY 11216</p>
+                </div>
+
+                <div class="phone">
+                    <p class="phone1">Have questions?<i class="fa-solid fa-phone"></i>(123)456 789</p>
+                </div>
+
+                <a href=""><button class="btn1"><i class="fa-solid fa-book-open"></i> Book An Appoinment</button> </a>  
+            </div>
+        </div>
+    </div>
+
+    <div class="container-menubar">
+        <div class="row-menubar">
+            <div class="col-menubar">
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>About Clinic</li>
+                    <li>Service</li>
+                    <li>What we treat</li>
+                    <li>Prices</li>
+                    <li>Other Pages</li>
+                    <li>Blog</li>
+                    <li>Store</li>
+                </ul>
+
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-offer">
+        <div class="row-offer">
+            <div class="col-offer">
+                <p class="oders"> <span>OFFERS APRIL! </span>-30% for comprehensive vision diagnostics. </p>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="container-picture">
+        <div class="row-picture">
+            <div class="col-picture">
+                <h1 class="heading">
+                    The face is a picture
+                  <br>  of the mind with an eyes
+                </h1>
+                <p class="head">The face is a picture of the mind with an eyes</p>
+                
+                <a href=""><button class="btn2">Buy Now</button></a>
+
+
+               <div class="img123"> <img src="https://ld-wt73.template-help.com/tf/oftalmologist_v3/images/image-15-840x434.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-advantages">
+        <div class="row-advantanges">
+            <div class="col-advantanges">
+                <p class="advan">Our advantages</p>
+                <h3 class="year">Good vision for many years</h3>
+
+                <div class="exeprince">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <p class="pra">Best practices</p>
+
+                    <i class="fa-solid fa-globe"></i>
+                    <p class="Newest">Newest equipment</p>
+
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <p class="doc">Doctors experience</p>
+
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <p class="diagnosis">Thorough diagnosis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container-main">
+        <div class="row-main">
+            <div class="col-main">
+                <p class="clinic">About clinic</p>
+                <h1 class="About">We are a recognized leader <br> in high-tech <br>ophthalmology services</h1>
+
+            <div class="main1">
+                    <div class="right">
+                  <div>  <i class="fa-solid fa-check"></i></div>
+                    <p class="p1">Performing all operations and procedures at the highest professional level using the most modern methods.</p>
+                </div>
+
+                <div class="right1">
+                   <div> <i class="fa-solid fa-check"></i></div>
+                    <p class="p1">Drawing up an individual treatment program for each patient.</p>
+                </div>
+
+                <div class="right2">
+                   <div> <i class="fa-solid fa-check"></i></div>
+                    <p class="p1">Compliance of materials and equipment with international standards, the availability of all necessary certificates and permits.</p>
+                </div>
+            </div>
+        
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
